@@ -1,0 +1,197 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OKV CBT - Demo of the full version</title><meta name="description" content="OKV CBT runs computer-based exams on your own network for organisations, colleges, universities, training centres, government agencies and organisations. Objective and theory exams, auto marking, PIN cards, report sheets. 12-day free trial, one-time payment of N120,000. Installation service available."><meta name="theme-color" content="#1b4fd8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet"></head><body>
+<div id="announce" class="announce d-none"></div><nav class="navbar navbar-expand-xl bg-white sticky-top border-bottom shadow-sm"><div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark">OK</span><span class="lh-1"><b>OKV CBT</b><small class="d-block text-secondary" style="font-size:.68rem">by OKV Technology Consults</small></span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nv"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nv"><ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link text-nowrap" href="index.html#about">About</a></li><li class="nav-item"><a class="nav-link text-nowrap" href="index.html#how">How it works</a></li>
+<li class="nav-item"><a class="nav-link text-nowrap" href="index.html#features">Features</a></li><li class="nav-item"><a class="nav-link text-nowrap" href="pricing.html">Pricing</a></li>
+<li class="nav-item"><a class="nav-link text-nowrap" href="demo.html">Live demo</a></li><li class="nav-item"><a class="nav-link text-nowrap" href="index.html#installation">Installation service</a></li><li class="nav-item"><a class="nav-link text-nowrap" href="index.html#faq">FAQ</a></li><li class="nav-item"><a class="nav-link text-nowrap" href="admin.html">Admin panel</a></li></ul>
+<div class="d-flex gap-2 flex-nowrap"><a class="btn btn-outline-primary text-nowrap" href="demo.html">Try the demo</a><button class="btn btn-primary text-nowrap" data-bs-toggle="modal" data-bs-target="#trialModal"><i class="bi bi-download"></i> Free trial</button></div></div></div></nav>
+<main class="container py-4">
+  <div class="row g-4 align-items-start">
+    <div class="col-lg-8">
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h1 class="h3 mb-1">OKV CBT demo</h1>
+          <p class="text-secondary mb-0">Walk through the real screens with sample data. Buttons and menus work. Fields marked <span class="badge text-bg-secondary">locked</span> are part of the full version: save and change are switched on after purchase.</p>
+        </div>
+      </div>
+      <div class="btn-group flex-wrap mb-3" role="tablist" id="tabs">
+        <button class="btn btn-outline-primary active" data-screen="0">Dashboard</button>
+        <button class="btn btn-outline-primary" data-screen="1">Set up</button>
+        <button class="btn btn-outline-primary" data-screen="2">Students</button>
+        <button class="btn btn-outline-primary" data-screen="3">Exam PINs</button>
+        <button class="btn btn-outline-primary" data-screen="4">Candidate exam</button>
+        <button class="btn btn-outline-primary" data-screen="5">Results</button>
+        <button class="btn btn-outline-primary" data-screen="6">Messages</button>
+        <button class="btn btn-outline-primary" data-screen="7">Backup</button>
+        <button class="btn btn-outline-primary" data-screen="8">Licence</button>
+      </div>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h2 class="h5" id="scrTitle"></h2>
+          <p class="text-secondary small" id="scrText"></p>
+          <img id="scrImg" class="img-fluid rounded border" alt="Screen from OKV CBT">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h2 class="h6">Try the form (demo)</h2>
+          <p class="small text-secondary mb-2" id="formIntro"></p>
+          <form id="demoForm" onsubmit="return false">
+            <div id="formFields"></div>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-secondary" id="saveBtn">Save (full version only)</button>
+              <a class="btn btn-success" id="buyBtn" href="pricing.html">Buy the full version</a>
+              <button type="button" class="btn btn-outline-primary" id="nextBtn">Next screen &rarr;</button>
+            </div>
+          </form>
+          <p class="small text-secondary mt-3 mb-0" id="formNote"></p>
+        </div>
+      </div>
+      <div class="card shadow-sm border-0">
+        <div class="card-body small">
+          <b>Keyboard in the exam screen:</b> A to D choose an option, N or &rarr; next, P or &larr; previous, F flag, S review and submit, ? list all keys.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ctaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title h5">This needs the full version</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body">
+        <p>In the demo, saving, submitting and changing data are switched off so that everyone sees the same sample data. The full version does all of this on your own computer or network.</p>
+        <p class="mb-0"><b>One-time licence: N120,000.</b> No monthly fees.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Keep exploring</button>
+        <a class="btn btn-success" href="pricing.html">Buy the full version</a>
+      </div>
+    </div></div>
+  </div>
+</main>
+<script>
+(function () {
+  var screens = [
+    { title: 'Dashboard', img: 'assets/img/02-admin-dashboard.png',
+      text: 'Counts, charts and the QR code for candidates, all in one place.',
+      intro: 'Choose the organisation name. This is shown on reports.',
+      fields: [['Organisation name', 'Greenfield Institute, Lagos'], ['Motto', 'Excellence in assessment']] },
+    { title: 'Set up', img: 'assets/img/05-organisation-type-settings.png',
+      text: 'Choose your type of organisation. The labels and menus change to match: Students, Candidates, Groups and so on.',
+      intro: 'Type of organisation (the choice changes the labels).',
+      fields: [['Organisation type', 'College / University']] },
+    { title: 'Students', img: 'assets/img/23-students-list.png',
+      text: 'Add students one by one, or import a CSV, Word or Excel file with a template. Numbers can be made automatically.',
+      intro: 'Add a student.',
+      fields: [['Surname', 'Okafor'], ['Other names', 'Ada'], ['Class', 'JSS 1'], ['Admission number', 'Generated automatically']] },
+    { title: 'Exam PINs', img: 'assets/img/08-exam-pins-page.png',
+      text: 'Generate PIN cards for a class. Students type one PIN to start. Cards print with a QR code.',
+      intro: 'Generate PINs for a class.',
+      fields: [['Class', 'JSS 1'], ['Uses per PIN', '3 (resume after a power cut)']] },
+    { title: 'Candidate exam', img: 'assets/img/10-candidate-exam-screen.png',
+      text: 'The candidate sees their photo and number at the top, the questions, and a palette to move between them.',
+      intro: 'Read the question. In the real exam, choose an answer with the keys shown in the note.',
+      fields: [['Question', 'What is 15% of 200?'], ['Your answer', 'Choose A, B, C or D']] },
+    { title: 'Results', img: 'assets/img/14-assessment-control-live.png',
+      text: 'See who is writing, who has submitted and who is marked, live. Results and class reports follow.',
+      intro: 'Add time for a candidate.',
+      fields: [['Candidate', 'Musa Ibrahim'], ['Extra minutes', '10']] },
+    { title: 'Messages', img: 'assets/img/21-messages.png',
+      text: 'Send a message to everyone, to staff, to a class or to one person.',
+      intro: 'Write a message.',
+      fields: [['To', 'All students'], ['Message', 'Exams start on Monday.']] },
+    { title: 'Backup', img: 'assets/img/20-backup-and-export.png',
+      text: 'Back up your data in five formats, and export any list to PDF, Word, Excel, CSV or a web page.',
+      intro: 'Choose a backup format.',
+      fields: [['Format', 'Full backup (.zip)']] },
+    { title: 'Licence', img: 'assets/img/22-licence-activated.png',
+      text: 'The full version is activated for life with a code sent by email after purchase.',
+      intro: 'Enter the activation code you received after purchase.',
+      fields: [['Activation code', 'OKV-XXXX-XXXX-XXXX-XXXX']] }
+  ];
+  var cur = 0;
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function show(i) {
+    cur = (i + screens.length) % screens.length;
+    var s = screens[cur];
+    document.getElementById('scrTitle').textContent = s.title;
+    document.getElementById('scrText').textContent = s.text;
+    var img = document.getElementById('scrImg');
+    img.src = s.img; img.alt = s.title + ' screen of OKV CBT';
+    document.getElementById('formIntro').textContent = s.intro;
+    document.getElementById('formFields').innerHTML = s.fields.map(function (f) {
+      return '<div class="mb-2"><label class="form-label small mb-1">' + esc(f[0]) + ' <span class="badge text-bg-secondary">locked</span></label>' +
+             '<input class="form-control" disabled value="' + esc(f[1]) + '"></div>';
+    }).join('');
+    document.getElementById('formNote').textContent = 'Screen ' + (cur + 1) + ' of ' + screens.length + '. Locked fields show sample values.';
+    document.querySelectorAll('#tabs button').forEach(function (b, k) { b.classList.toggle('active', k === cur); });
+  }
+  document.querySelectorAll('#tabs button').forEach(function (b) {
+    b.addEventListener('click', function () { show(+b.getAttribute('data-screen')); });
+  });
+  document.getElementById('nextBtn').addEventListener('click', function () { show(cur + 1); });
+  document.getElementById('saveBtn').addEventListener('click', function () {
+    var m = new bootstrap.Modal(document.getElementById('ctaModal')); m.show();
+  });
+  document.getElementById('scrImg').addEventListener('click', function () {
+    var m = new bootstrap.Modal(document.getElementById('ctaModal')); m.show();
+  });
+  show(0);
+})();
+</script>
+
+<footer class="foot pt-5 pb-4"><div class="container"><div class="row g-4">
+<div class="col-lg-4"><div class="d-flex align-items-center gap-2 mb-2"><span class="brand-mark">OK</span><b class="text-white fs-5">OKV CBT</b></div>
+<p class="small">LAN-based Computer-Based Testing for colleges, companies, training centres, government agencies and schools. Built and supported by OKV Technology Consults, Nigeria.</p>
+<p class="small mb-0"><i class="bi bi-tools"></i> <b>Installation service available.</b> We install, configure and train your staff.</p></div>
+<div class="col-6 col-lg-2"><h6 class="text-white">Product</h6><ul class="list-unstyled small"><li><a href="index.html#audience">Who it is for</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="pricing.html#downloads">Download for Windows / Mac</a></li><li><a href="demo.html">Live demo</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="admin.html">Admin panel</a></li></ul></div>
+<div class="col-6 col-lg-3"><h6 class="text-white">Legal</h6><ul class="list-unstyled small"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="cookies.html">Cookie Policy</a></li><li><a href="refund.html">Refund &amp; Cancellation</a></li><li><a href="license.html">Software Licence Agreement</a></li></ul></div>
+<div class="col-lg-3"><h6 class="text-white">Contact OKV Technology Consults</h6><ul class="list-unstyled small">
+<li><i class="bi bi-envelope"></i> <a href="mailto:technologyokv@gmail.com">technologyokv@gmail.com</a></li><li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/2348104141138">+234 810 414 1138</a></li><li><i class="bi bi-telephone"></i> <a href="tel:+2349152103969">+234 915 210 3969</a></li><li><i class="bi bi-globe"></i> <a href="https://www.okvtechnology.com">www.okvtechnology.com</a></li></ul>
+<button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Send us a message</button></div></div>
+<hr class="border-secondary mt-4"><div class="small d-flex flex-wrap justify-content-between gap-2"><span>&copy; <span id="yr"></span> OKV Technology Consults. All rights reserved.</span><span>OKV CBT works on Windows 7, 8, 10 and 11 (32-bit and 64-bit) and on Mac.</span></div></div></footer>
+<a class="wa-float" href="https://wa.me/2348104141138?text=Hello%20OKV%20Technology%2C%20I%20want%20to%20know%20more%20about%20OKV%20CBT" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<div id="cookieBar" class="cookiebar d-none"><div class="container d-flex flex-wrap gap-3 align-items-center justify-content-between"><span class="small">We use essential cookies and local storage to make this site work, and optional ones to remember your choices. See our <a href="cookies.html" class="text-warning">Cookie Policy</a> and <a href="privacy.html" class="text-warning">Privacy Policy</a>.</span>
+<span class="d-flex gap-2"><button class="btn btn-sm btn-outline-light" id="ckNo">Essential only</button><button class="btn btn-sm btn-warning" id="ckYes">Accept all</button></span></div></div>
+<div class="modal fade" id="trialModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+<div class="modal-header"><div><h5 class="modal-title">Download the 12-day free trial</h5><small class="text-secondary">Fill this short form and your download starts straight away. Full features, no card needed.</small></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><form data-okv="trial" class="row g-3">
+<div class="col-md-6"><label class="form-label small mb-1">Your full name *</label><input class="form-control" name="name" type="text" required ></div><div class="col-md-6"><label class="form-label small mb-1">Organisation / institution *</label><input class="form-control" name="school" type="text" required ></div><div class="col-md-6"><label class="form-label small mb-1">Email address *</label><input class="form-control" name="email" type="email" required ></div><div class="col-md-6"><label class="form-label small mb-1">Phone / WhatsApp *</label><input class="form-control" name="phone" type="tel" required ></div>
+<div class="col-md-6"><label class="form-label small mb-1">You are *</label><select class="form-select" name="role" required><option value="">Choose...</option><option>Organisation owner / proprietor</option><option>Principal / head teacher</option><option>ICT teacher / administrator</option><option>College / university official</option><option>Exam officer / registrar</option><option>Organisation HR / training manager</option><option>Government / agency official</option><option>Training centre / examiner</option><option>Other</option></select></div>
+<div class="col-md-6"><label class="form-label small mb-1">Approximate number of students</label><select class="form-select" name="students"><option>Under 100</option><option>100 - 300</option><option>300 - 1,000</option><option>Over 1,000</option></select></div>
+<div class="col-12"><label class="form-label small mb-1">The computer that will run OKV CBT (the server) *</label><select class="form-select" name="os" id="osSel" required><option value="windows">Windows 7, 8, 10 or 11 (32-bit or 64-bit)</option><option value="mac_arm">Mac - Apple Silicon (M1, M2, M3, M4)</option><option value="mac_intel">Mac - Intel</option></select><div class="form-text">Exam computers and phones need nothing installed - they just use a web browser.</div></div>
+<div class="col-12 form-check ms-2"><input class="form-check-input" type="checkbox" name="consent" id="c1" required><label class="form-check-label small" for="c1">I agree to the <a href="terms.html" target="_blank">Terms</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> and to be contacted about my trial.</label></div>
+<div class="col-12 form-check ms-2"><input class="form-check-input" type="checkbox" name="install_help" id="c2"><label class="form-check-label small" for="c2">I would also like OKV to help <b>install</b> it for us (installation service).</label></div>
+<div class="col-12"><div class="okv-msg"></div><button class="btn btn-primary btn-lg w-100" type="submit"><i class="bi bi-download"></i> Get my free trial download</button></div></form>
+<div class="okv-done d-none text-center py-3"><div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div><h5 class="mt-2">Thank you! Your download is ready.</h5>
+<p class="text-secondary">If it did not start automatically, press the button. The zip contains the Setup wizard and instructions. We also emailed you the steps.</p>
+<a id="dlBtn" class="btn btn-success btn-lg" href="#"><i class="bi bi-download"></i> Download OKV CBT</a>
+<ol class="text-start small mt-4 mx-auto" style="max-width:480px"><li><b>Windows:</b> unzip, double-click <b>OKV-CBT-Setup.exe</b> and follow the wizard.<br><b>Mac:</b> open the .dmg and drag <b>OKV CBT</b> into Applications (first time: right-click &rarr; Open).</li><li>Sign in with <b>admin / admin123</b>.</li><li>Your free trial starts on first run. No Python or other software needed.</li></ol></div></div></div></div></div>
+
+<div class="modal fade" id="installModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+<div class="modal-header"><div><h5 class="modal-title"><i class="bi bi-tools"></i> Request installation service</h5><small class="text-secondary">OKV Technology Consults installs and sets up OKV CBT for you.</small></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><form data-okv="installation" class="row g-3">
+<div class="col-md-6"><label class="form-label small mb-1">Your name *</label><input class="form-control" name="name" type="text" required ></div><div class="col-md-6"><label class="form-label small mb-1">Organisation / institution *</label><input class="form-control" name="school" type="text" required ></div><div class="col-md-6"><label class="form-label small mb-1">Email address *</label><input class="form-control" name="email" type="email" required ></div><div class="col-md-6"><label class="form-label small mb-1">Phone / WhatsApp *</label><input class="form-control" name="phone" type="tel" required ></div><div class="col-md-6"><label class="form-label small mb-1">Location (city, state) *</label><input class="form-control" name="location" type="text" required ></div><div class="col-md-6"><label class="form-label small mb-1">Number of exam computers</label><input class="form-control" name="computers" type="number"  ></div>
+<div class="col-md-6"><label class="form-label small mb-1">Type of service</label><select class="form-select" name="service"><option>Remote installation (we connect to your computer)</option><option>On-site installation and setup</option><option>On-site installation + staff training</option></select></div>
+<div class="col-md-6"><label class="form-label small mb-1">Preferred date</label><input class="form-control" type="date" name="date"></div>
+<div class="col-12"><label class="form-label small mb-1">Notes</label><textarea class="form-control" name="notes" rows="2" placeholder="Tell us about your computers, network and exam plans"></textarea></div>
+<div class="col-12 form-check ms-2"><input class="form-check-input" type="checkbox" name="consent" id="c3" required><label class="form-check-label small" for="c3">I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and to be contacted about this request.</label></div>
+<div class="col-12"><div class="okv-msg"></div><button class="btn btn-success btn-lg w-100" type="submit">Send installation request</button></div></form>
+<div class="okv-done d-none text-center py-4"><div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div><h5 class="mt-2">Request received</h5><p class="text-secondary">OKV Technology Consults will contact you shortly with a quote and date.</p></div></div></div></div></div>
+
+<div class="modal fade" id="contactModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+<div class="modal-header"><h5 class="modal-title">Message OKV Technology Consults</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><form data-okv="contact" class="row g-3">
+<div class="col-12"><label class="form-label small mb-1">Your name *</label><input class="form-control" name="name" type="text" required ></div><div class="col-12"><label class="form-label small mb-1">Email address *</label><input class="form-control" name="email" type="email" required ></div><div class="col-12"><label class="form-label small mb-1">Phone / WhatsApp</label><input class="form-control" name="phone" type="tel"  ></div>
+<div class="col-12"><label class="form-label small mb-1">Message *</label><textarea class="form-control" name="message" rows="4" required></textarea></div>
+<div class="col-12 form-check ms-2"><input class="form-check-input" type="checkbox" name="consent" id="c4" required><label class="form-check-label small" for="c4">I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a>.</label></div>
+<div class="col-12"><div class="okv-msg"></div><button class="btn btn-primary w-100" type="submit">Send message</button></div></form>
+<div class="okv-done d-none text-center py-4"><div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div><h5 class="mt-2">Message sent</h5><p class="text-secondary">We will reply by email or WhatsApp.</p></div></div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="assets/js/config.js"></script><script src="assets/js/site.js"></script></body></html>
